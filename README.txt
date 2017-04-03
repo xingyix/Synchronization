@@ -1,15 +1,18 @@
 Weiling Zheng (Lydia) 
 301294091  weilingz@sfu.ca
 
-How to run the function:
-1. type 'make'
-2. type './mylocks -t 4 -i 1000000 -o 1 -c 1 -d 0'
-	which means there are 4 threads, 1000000 iterations, 1 opeartion outside critical section, 1 operation inside critical section and test all the locks.
-	You can change the number to test other cases.
-3. type 'make clean' to recompile the file
+Instructions on running the function are listed as following:
 
-The output samples:
+1. Type 'make' to generate the executable
+2. Type './mylocks -t 4 -i 1000000 -o 1 -c 1 -d 0'
+	- which means there are 4 threads, 1000000 iterations, 1 opeartion outside critical section, 1 operation inside critical section and test all the locks.
+	- You can change the number to test other cases.
+3. Type 'make clean' to recompile the file
+
+The output samples are presented as following:
+
 1.
+
 weilingz@asb9820u-b04:~/Desktop/base-a3$ ./mylocks -t 8 -i 1000000 -o 1 -c 1 -d 0
 Usage of: ./mylocks -t #threads -i #Itterations -o #OperationsOutsideCS -c #OperationsInsideCS -d testid
 testid: 0=all, 1=pthreadMutex, 2=pthreadSpinlock, 3=mySpinLockTAS, 4=mySpinLockTTAS, 5=myMutexTTAS, 6=myQueueLock, 
@@ -39,7 +42,8 @@ Pthread MutexTTAS time(ms): 654
 Threaded Run Pthread (myQueueLock) Total Count: 8000000
 Pthread myQueueLock time(ms): 1077
 
-2. (default)
+2. (default) Output example
+
 weilingz@asb9820u-b04:~/Desktop/base-a3$ ./mylocks
 Usage of: ./mylocks -t #threads -i #Itterations -o #OperationsOutsideCS -c #OperationsInsideCS -d testid
 testid: 0=all, 1=pthreadMutex, 2=pthreadSpinlock, 3=mySpinLockTAS, 4=mySpinLockTTAS, 5=myMutexTTAS, 6=myQueueLock, 

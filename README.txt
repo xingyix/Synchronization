@@ -1,15 +1,15 @@
 Weiling Zheng (Lydia) 
 301294091  weilingz@sfu.ca
 
-Instructions on running the function are listed as following:
+Instructions on running the function are listed as follows:
 
-1. Type 'make' to generate the executable
+1. Type 'make' to generate the executable file
 2. Type './mylocks -t 4 -i 1000000 -o 1 -c 1 -d 0'
 	- which means there are 4 threads, 1000000 iterations, 1 opeartion outside critical section, 1 operation inside critical section and test all the locks.
 	- You can change the number to test other cases.
 3. Type 'make clean' to recompile the file
 
-The output samples are presented as following:
+The output samples are presented as follows:
 
 1.
 
